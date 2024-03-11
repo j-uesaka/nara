@@ -28,7 +28,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p>値は：{import.meta.env.VITE_HOGE}</p>
-      <p>秘密の値は：{import.meta.env.secrets.VITE_HOGE}</p>
+      <p>秘密の値は：{import.meta.env.secrets.VITE_HIMITU}</p>
     </>
   )
 }
