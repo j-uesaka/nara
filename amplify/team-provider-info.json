@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-toudaiji-dev-162215-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267026814:role/amplify-toudaiji-dev-162215-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267026814:role/amplify-toudaiji-dev-162215-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-toudaiji-dev-162215-deployment",
+      "UnauthRoleName": "amplify-toudaiji-dev-162215-unauthRole",
+      "StackName": "amplify-toudaiji-dev-162215",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:533267026814:stack/amplify-toudaiji-dev-162215/16307c90-df78-11ee-b50a-0ed321be249d",
+      "AmplifyAppId": "d3fmr6cq1yww4f"
+    },
+    "categories": {
+      "api": {
+        "toudaiji": {}
+      }
+    }
+  }
+}
