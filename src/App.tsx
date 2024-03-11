@@ -28,7 +28,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      <p>{process.env.REACT_APP_HOGE}</p>
+      <p>値は{process.env.REACT_APP_HOGE}</p>
     </>
   )
 }
