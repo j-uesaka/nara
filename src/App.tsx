@@ -1,7 +1,18 @@
 import { useState } from 'react'
+import { SSMClient, GetParameterCommand } from "@aws-sdk/client-ssm";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+const client = new SSMClient({
+  region: 'ap-northeast-1',
+});
+const input = { // GetParameterRequest
+  Name: "/amplify/d3fmr6cq1yww4f/master/VITE_HIMITU", // required
+  WithDecryption: true,
+};
+const command = new GetParameterCommand(input);
+const response = await client.send(command);
+console.log(response)
 function App() {
   const [count, setCount] = useState(0)
 
@@ -28,6 +39,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
       <p>値は：{import.meta.env.VITE_HOGE}</p>
+      <p>秘密の値は：{import.meta.env.secrets.VITE_HIMITU}</p>
     </>
   )
 }
